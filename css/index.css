@@ -8,6 +8,9 @@
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -75,10 +78,14 @@ header {
   text-align: center;
   margin: 50px 0 0 0;
 }
+.menu-items a {
+  text-decoration: none;
+  color: var(--main-color);
+}
 .menu-items li {
   margin: 20px 0 20px 0;
 }
-.menu-items li:hover {
+.menu-items a:hover {
   color: var(--main-color);
   text-decoration: underline;
   cursor: pointer;
@@ -727,9 +734,35 @@ iframe {
   align-items: center;
   margin-top: 15px;
 }
+.arrow-bottom {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  left: 85%;
+  bottom: 3%;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 1s;
+  visibility: hidden;
+}
+.arrow-bottom:hover {
+  box-shadow: 0 0 5px 3px var(--main-color);
+}
+
+.active-arrow-up {
+  visibility: visible;
+}
+
 @media (min-width: 768px) {
   .container-map-contacts {
     flex-flow: row;
     align-items: center;
+  }
+  .arrow-bottom {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 92%;
+    bottom: 5%;
   }
 }
