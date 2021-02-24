@@ -4,8 +4,20 @@ window.onload = function () {
     .addEventListener("click", showBurgerMenu);
 
   function showBurgerMenu() {
-    document.getElementById("header-burger").classList.toggle("active");
-    document.getElementById("headerMenu").classList.toggle("active");
+    let headerBurger = document.getElementById("header-burger");
+    let headerMenu = document.getElementById("headerMenu");
+
+    headerBurger.classList.toggle("active");
+    headerMenu.classList.toggle("active");
+  }
+  window.addEventListener("scroll", closeBurgerMenu);
+
+  function closeBurgerMenu() {
+    let headerBurger = document.getElementById("header-burger");
+    let headerMenu = document.getElementById("headerMenu");
+
+    headerBurger.classList.toggle("active", false);
+    headerMenu.classList.toggle("active", false);
   }
 };
 
