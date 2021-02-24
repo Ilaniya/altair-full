@@ -38,7 +38,12 @@
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
               obcaecati asperiores voluptatibus exercitationem unde
             </p>
-            <button class="btn-banner-trial-lesson">Пробний урок</button>
+            <button
+              class="btn-banner-trial-lesson"
+              onClick="document.getElementById('trialLesson').scrollIntoView();"
+            >
+              Пробний урок
+            </button>
           </div>
           <div class="container-banner-img">
             <img
@@ -69,7 +74,12 @@
                 без обмежень у віці. Є групи для початківців, для тих, хто
                 продовжує навчання. Тренування проходять тричі на тиждень.
               </p>
-              <button class="btn-directions">Пробний урок</button>
+              <button
+                class="btn-directions"
+                onClick="document.getElementById('trialLesson').scrollIntoView();"
+              >
+                Пробний урок
+              </button>
             </div>
           </article>
           <article class="yoga">
@@ -83,7 +93,12 @@
                 без обмежень у віці. Є групи для початківців, для тих, хто
                 продовжує навчання. Тренування проходять тричі на тиждень.
               </p>
-              <button class="btn-directions">Пробний урок</button>
+              <button
+                class="btn-directions"
+                onClick="document.getElementById('trialLesson').scrollIntoView();"
+              >
+                Пробний урок
+              </button>
             </div>
           </article>
           <article class="stretching">
@@ -101,7 +116,12 @@
                 без обмежень у віці. Є групи для початківців, для тих, хто
                 продовжує навчання. Тренування проходять тричі на тиждень.
               </p>
-              <button class="btn-directions">Пробний урок</button>
+              <button
+                class="btn-directions"
+                onClick="document.getElementById('trialLesson').scrollIntoView();"
+              >
+                Пробний урок
+              </button>
             </div>
           </article>
           <article class="wedding-dance">
@@ -119,7 +139,12 @@
                 без обмежень у віці. Є групи для початківців, для тих, хто
                 продовжує навчання. Тренування проходять тричі на тиждень.
               </p>
-              <button class="btn-directions">Пробний урок</button>
+              <button
+                class="btn-directions"
+                onClick="document.getElementById('trialLesson').scrollIntoView();"
+              >
+                Пробний урок
+              </button>
             </div>
           </article>
         </div>
@@ -459,7 +484,7 @@
         </div>
       </section>
 
-      <section class="trial-form">
+      <section id="trialLesson" class="trial-form">
         <div class="container container-form">
           <form class="form-trial-lesson">
             <h2>Записатись <br />на пробний урок</h2>
@@ -472,7 +497,7 @@
             <label
               ><input
                 class="input-phone"
-                type="number"
+                type="phone"
                 placeholder="Номер телефону"
             /></label>
             <label
