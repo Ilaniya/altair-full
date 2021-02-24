@@ -25,7 +25,9 @@ class Carousel {
 }
 
 new Carousel([
-  "img/carousel.jpg",
-  "img/belly-dance-cover.jpg",
-  "img/altair_trainer-solo.jpg",
+  "img/galery-1.jpg",
+  "img/galery-2.jpg",
+  "img/galery-3.jpg",
+  "img/galery-4.jpg",
+  "img/galery-5.jpg",
 ]);
