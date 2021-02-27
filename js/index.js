@@ -1,4 +1,5 @@
 window.onload = function () {
+  ///////   function for burger menu ////////
   document
     .querySelector("#header-burger")
     .addEventListener("click", showBurgerMenu);
@@ -20,38 +21,36 @@ window.onload = function () {
     headerMenu.classList.toggle("active", false);
   }
 
-  // Get the modal
-  let modal = document.querySelector(".modal");
+  // Get the modal-cont-form
+  let modalCntForm = document.querySelector(".modal-cont-form");
 
-  // Get the button that opens the modal
+  // Get the button that opens the modal-cont-form
   let openBtn = document.querySelector(".btn-submit");
 
-  // Get the button that closes the modal
-  let closeBtn = document.querySelector(".btn-modal");
+  // Get the button that closes the modal-cont-form
+  let closeBtn = document.querySelector(".btn-modal-cont-form");
 
-  let inputName = document.querySelector(".input-name");
-  let inputPhone = document.querySelector(".input-phone");
+  // let inputName = document.querySelector(".input-name");
+  // let inputPhone = document.querySelector(".input-phone");
 
-  // When the user clicks the button, open the modal
+  // When the user clicks the button, open the modal-cont-form
   openBtn.onclick = function () {
-    modal.style.display = "block";
-    inputName.value = "";
-    inputPhone.value = "";
+    modalCntForm.style.display = "flex";
+    // document.getElementsByName("form-trial-lesson").reset;
   };
 
   // When the user clicks on buttonClose, close the modal
   closeBtn.onclick = function () {
-    modal.style.display = "none";
+    modalCntForm.style.display = "none";
+    document.forms["contact-form"].reset();
   };
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function (event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
+    if (event.target == modalCntForm) {
+      modalCntForm.style.display = "none";
     }
   };
-
-  document.getElementById("elementId").value = "";
 };
 
 $(function () {
@@ -65,11 +64,4 @@ $(function () {
   $(".arrow-bottom").on("click", function () {
     $("html, body").animate({ scrollTop: "0" }, 300, "swing");
   });
-
-  // $(".btn-modal").on("click", function () {
-  //   $(".modal").removeClass("active");
-  // });
-  // $(".btn-submit").on("click", function () {
-  //   $(".modal").addClass("active");
-  // });
 });
