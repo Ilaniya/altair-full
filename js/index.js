@@ -25,16 +25,13 @@ window.onload = function () {
   let modalCntForm = document.querySelector(".modal-cont-form");
 
   // Get the button that opens the modal-cont-form
-  let openBtn = document.querySelector(".btn-submit");
+  let submitBtn = document.querySelector(".btn-submit");
 
   // Get the button that closes the modal-cont-form
   let closeBtn = document.querySelector(".btn-modal-cont-form");
 
-  // let inputName = document.querySelector(".input-name");
-  // let inputPhone = document.querySelector(".input-phone");
-
   // When the user clicks the button, open the modal-cont-form
-  openBtn.onclick = function () {
+  submitBtn.onclick = function () {
     modalCntForm.style.display = "flex";
     // document.getElementsByName("form-trial-lesson").reset;
   };
