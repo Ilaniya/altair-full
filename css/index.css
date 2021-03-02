@@ -323,6 +323,7 @@ header {
   }
   .container-directions-img {
     flex-basis: 700px;
+    min-width: 360px;
   }
   .container-directions-items h3 {
     margin: 5px;
@@ -532,13 +533,15 @@ th {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  flex-grow: 1;
 }
 .about-img {
-  width: 80%;
+  width: 70%;
   display: block;
   margin: 0 auto;
   box-shadow: 15px -15px 1px 0 #fcd8d6;
 }
+
 .container-about-info h2 {
   font-family: "Marck Script", cursive;
   color: var(--main-color);
@@ -558,16 +561,21 @@ th {
   color: #5a5252;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 870px) {
   .about-us-container {
     justify-content: space-between;
     flex-flow: row;
-  }
-  .about-us-container {
     padding: 30px 20px 15px 0;
   }
   .container-about-info p {
     font-size: 16px;
+  }
+  .container-about-info {
+    max-width: 700px;
+    margin-left: 50px;
+  }
+  .about-img {
+    width: 100%;
   }
 }
 
@@ -684,7 +692,7 @@ th {
 }
 .testimonials-block p:last-child {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 20px;
 }
 .link-Testimon {
   display: block;
@@ -834,9 +842,11 @@ iframe {
 .container-footer-social-networks p {
   margin-top: 20px;
 }
-.social-icons a {
-  width: 20px;
-  height: 20px;
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  color: #efaeab;
+  margin: 5px;
 }
 .container-footer-social-networks ul {
   display: flex;
