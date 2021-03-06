@@ -52,7 +52,7 @@ h3 {
 header {
   display: block;
   padding: 10px 25px 10px 25px;
-  background-image: url("/img/background2.png");
+  background-image: url("img/background2.png");
 }
 .header-container-info {
   display: none;
@@ -160,7 +160,8 @@ header {
 .header-contacts {
   padding: 35px 12px 0 0;
 }
-.header-contacts a {
+.header-contacts a,
+.banner a {
   text-decoration: none;
   color: rgb(90, 82, 82);
 }
@@ -172,7 +173,7 @@ header {
   line-height: 25px;
 }
 .banner h1 {
-  margin-top: 70px;
+  margin-top: 100px;
   text-align: center;
   line-height: 55px;
   font-size: 65px;
@@ -346,7 +347,7 @@ header {
 /* ////// START ADVANTAGES SECTION STYLES /////// */
 
 .advantages {
-  background-image: url("/img/belly-dance_adventag.png");
+  background-image: url("img/belly-dance_adventag.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
@@ -471,7 +472,7 @@ header {
 
 /* ////// START SCHEDULE SECTION STYLES /////// */
 .schedule {
-  background-image: url("/img/background2.png");
+  background-image: url("img/background2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -530,7 +531,7 @@ th {
 
 /* ////// START SECTION ABOUT US STYLES /////// */
 .about-us {
-  background-image: url("/img/background2.png");
+  background-image: url("img/background2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -560,6 +561,7 @@ th {
   font-family: "Marck Script", cursive;
   color: var(--main-color);
   text-align: center;
+  line-height: 40px;
   margin: 30px 0 10px 0;
 }
 .container-about-info p {
@@ -598,7 +600,7 @@ th {
 /* ////// START SECTION OUR TEAM STYLES /////// */
 
 .our-team {
-  background-image: url("/img/background3.png");
+  background-image: url("img/background3.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -671,7 +673,7 @@ th {
 /* /////////////////////// SECTION TESTIMONIALS //////////////////// */
 
 .testimonials {
-  background-image: url("/img/testimonials-background.png");
+  background-image: url("img/testimonials-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   /* height: 50vh; */
@@ -754,7 +756,7 @@ th {
 /* ////// START SECTION TRIAL FORM STYLES /////// */
 
 .trial-form {
-  background-image: url("/img/background-form.jpg");
+  background-image: url("img/background-form.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
