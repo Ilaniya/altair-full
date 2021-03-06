@@ -52,7 +52,7 @@ h3 {
 header {
   display: block;
   padding: 10px 25px 10px 25px;
-  background-image: url("img/background2.png");
+  background-image: url("/img/background2.png");
 }
 .header-container-info {
   display: none;
@@ -347,7 +347,7 @@ header {
 /* ////// START ADVANTAGES SECTION STYLES /////// */
 
 .advantages {
-  background-image: url("img/belly-dance_adventag.png");
+  background-image: url("/img/belly-dance_adventag.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
@@ -472,7 +472,7 @@ header {
 
 /* ////// START SCHEDULE SECTION STYLES /////// */
 .schedule {
-  background-image: url("img/background2.png");
+  background-image: url("/img/background2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -531,7 +531,7 @@ th {
 
 /* ////// START SECTION ABOUT US STYLES /////// */
 .about-us {
-  background-image: url("img/background2.png");
+  background-image: url("/img/background2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -600,7 +600,7 @@ th {
 /* ////// START SECTION OUR TEAM STYLES /////// */
 
 .our-team {
-  background-image: url("img/background3.png");
+  background-image: url("/img/background3.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -673,7 +673,7 @@ th {
 /* /////////////////////// SECTION TESTIMONIALS //////////////////// */
 
 .testimonials {
-  background-image: url("img/testimonials-background.png");
+  background-image: url("/img/testimonials-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   /* height: 50vh; */
@@ -756,7 +756,7 @@ th {
 /* ////// START SECTION TRIAL FORM STYLES /////// */
 
 .trial-form {
-  background-image: url("img/background-form.jpg");
+  background-image: url("/img/background-form.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
