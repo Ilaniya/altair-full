@@ -87,6 +87,10 @@ header {
   text-decoration: none;
   color: inherit;
 }
+.menu-items a:hover {
+  text-decoration: underline;
+  color: var(--main-color);
+}
 .menu-items a:active {
   outline: none;
   -webkit-tap-highlight-color: transparent;
@@ -180,7 +184,14 @@ header {
   margin: 40px auto 0;
   font-size: 18px;
 }
-.phone-burger :focus {
+.phone-burger:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.phone-burger:hover {
+  color: var(--main-color);
+}
+.phone-burger:active {
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -554,7 +565,7 @@ header {
   color: var(--main-color);
 }
 .container-schedule-items td {
-  padding: 6px 7px 6px 10px;
+  padding: 6px 7px 6px 7px;
 }
 table {
   margin: 0 auto;
