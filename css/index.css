@@ -16,12 +16,13 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: rgb(90, 82, 82);
-  line-height: 25.6px;
+  line-height: 30px;
+  font-size: 20px;
 }
 .container {
   max-width: 1100px;
   margin: auto;
-  padding: 10px;
+  padding: 5px;
 }
 ul,
 h1,
@@ -35,16 +36,14 @@ h1,
 h2 {
   color: var(--main-color);
   font-family: "Marck Script", cursive;
-  line-height: 30px;
-  margin-bottom: 20px;
+  line-height: 45px;
 }
-
 h2 {
-  font-size: 40px;
+  font-size: 50px;
 }
 h3 {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 30px;
 }
 
@@ -69,7 +68,7 @@ header {
   top: -100%;
   left: 0;
   width: 100%;
-  height: 400px;
+  height: 500px;
   background-color: var(--accent-color);
   transition: all 0.3s ease 0s;
   z-index: 3;
@@ -81,11 +80,11 @@ header {
 .menu-items {
   list-style-type: none;
   text-align: center;
-  margin: 50px 0 0 0;
+  margin: 90px 0 0 0;
 }
 .menu-items a {
   text-decoration: none;
-  color: rgb(90, 82, 82);
+  color: inherit;
 }
 .menu-items li {
   margin: 20px 0 20px 0;
@@ -94,7 +93,7 @@ header {
   color: var(--main-color);
   text-decoration: underline;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .burger {
@@ -104,7 +103,7 @@ header {
   height: 25px;
   margin: 30px 0 0 15px;
   cursor: pointer;
-  z-index: 5;
+  z-index: 15;
 }
 .burger::before,
 .burger::after {
@@ -135,24 +134,40 @@ header {
 .burger.active::before {
   transform: rotate(45deg);
   top: 10px;
-  z-index: 1;
+  z-index: 10;
 }
 .burger.active::after {
   transform: rotate(-45deg);
   bottom: 12px;
-  z-index: 1;
+  z-index: 10;
 }
 .burger.active span {
   transform: scale(0);
   transition: all 0.3s ease 0s;
+}
+.phone-burger {
+  display: block;
+  width: 170px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  margin-left: 50px;
+  z-index: 10;
 }
 
 /* ////////  STYLES FOR BANNER AREA  //////// */
 
 .banner-img {
   display: block;
-  margin: 25px auto;
+  margin: 30px auto 0;
   width: 85%;
+  min-width: 300px;
+}
+.container-banner {
+  min-width: 310px;
 }
 .header-contacts p {
   margin: 0;
@@ -163,43 +178,40 @@ header {
 .header-contacts a,
 .banner a {
   text-decoration: none;
-  color: rgb(90, 82, 82);
+  color: inherit;
 }
 
 .header-contacts p {
-  font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  line-height: 25px;
 }
 .banner h1 {
   margin-top: 100px;
+  margin-bottom: 15px;
   text-align: center;
-  line-height: 55px;
-  font-size: 65px;
+  line-height: 60px;
+  font-size: 70px;
   letter-spacing: -1.5px;
   font-weight: 500;
 }
 .banner-text {
   text-align: center;
-  font-size: 16px;
   font-weight: 400;
-  line-height: 27px;
 }
 .btn-banner-trial-lesson {
   display: block;
   margin: auto;
-  width: 170px;
+  width: 185px;
   height: 35px;
   border-radius: 34px;
+  border: 1px solid var(--main-color);
   background-color: var(--accent-color);
-  border: none;
   cursor: pointer;
   color: var(--main-color);
-  margin-top: 80px;
-  padding-top: 10px;
+  margin-top: 60px;
+  padding-top: 7px;
+  padding-bottom: 2px;
   text-align: center;
-  border: 1px solid var(--main-color);
 }
 .btn-banner-trial-lesson:focus {
   outline: none;
@@ -224,7 +236,6 @@ header {
   header {
     padding: 10px 0 15px 0;
   }
-
   .header-container-info {
     display: flex;
     justify-content: space-between;
@@ -246,10 +257,9 @@ header {
     list-style-type: none;
     padding: 0;
     margin: 20px 75px 10px 75px;
+    font-size: 18px;
   }
-
-  /* /////// BANNER AREA STYLES /////// */
-
+  /* ///// BANNER AREA STYLES ///// */
   .container-banner {
     display: flex;
     justify-content: space-between;
@@ -264,7 +274,7 @@ header {
 
 .studio-directions h2 {
   text-align: center;
-  margin: 40px 0 30px 0;
+  margin: 40px 0 40px 0;
 }
 .studio-directions {
   background-image: url("../img/background2.png");
@@ -278,6 +288,7 @@ header {
 }
 .container-directions-img {
   min-height: 150px;
+  margin: 20px 0 20px 0;
 }
 .img-directions {
   box-shadow: 10px -10px 1px 0 #fcd8d6;
@@ -298,8 +309,6 @@ header {
 }
 
 .studio-directions p {
-  font-size: 14px;
-  line-height: 25.6px;
   padding: 10px;
 }
 .btn-directions {
@@ -347,7 +356,6 @@ header {
     margin: 5px;
   }
   .studio-directions p {
-    font-size: 16px;
     padding: 10px;
   }
 }
@@ -379,12 +387,10 @@ header {
   font-family: "Marck Script", cursive;
   color: var(--main-color);
   text-align: center;
-  margin-top: 30px;
-  padding-bottom: 10px;
 }
 .advantages-item ul {
   list-style: none;
-  margin: 5px 5px 25px 5px;
+  margin: 5px;
 }
 .advantages-item ul li {
   margin: 15px;
@@ -409,22 +415,20 @@ header {
     min-height: 120px;
   }
   .advantages-item h2 {
-    font-size: 40px;
+    /* font-size: 40px; */
     margin-top: 15px;
   }
 }
 
-/* ////// START GALERY SECTION STYLES /////// */
-
+/* ////// START CAROUSEL SECTION STYLES /////// */
 .container-galery h2 {
   font-family: "Marck Script", cursive;
   color: var(--main-color);
   text-align: center;
-  margin: 40px 0 30px 0px;
+  margin: 40px 0 40px 0px;
 }
 .container-galery p {
   text-align: center;
-  font-size: 14px;
   margin-bottom: 20px;
 }
 .container-galery a {
@@ -436,19 +440,19 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 .container-galery-img img {
-  width: 80%;
+  width: 87%;
 }
-
 .container-galery-img i {
   border: 1px solid var(--main-color);
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 3px;
-  margin: 5px;
-  width: 8px;
-  height: 8px;
+  padding: 2px;
+  margin: 1px;
+  width: 9px;
+  height: 9px;
   opacity: 0.7;
 }
 .container-galery-img p {
@@ -463,12 +467,6 @@ header {
   -webkit-transform: rotate(135deg);
 }
 @media (min-width: 768px) {
-  .container-galery p {
-    font-size: 16px;
-  }
-  .container-galery h2 {
-    font-size: 40px;
-  }
   .container-galery-img i {
     width: 20px;
     height: 20px;
@@ -486,7 +484,7 @@ header {
   text-align: center;
   font-family: "Marck Script", cursive;
   color: var(--main-color);
-  margin: 45px 0 10px 0;
+  margin: 40px 0 40px 0;
 }
 
 .container-schedule-items {
@@ -495,7 +493,6 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 30px;
 }
 .schedule-item {
   background: var(--accent-color);
@@ -555,6 +552,7 @@ th {
 }
 .about-img {
   width: 50%;
+  min-width: 225px;
   display: block;
   margin: 0 auto;
   box-shadow: 15px -15px 1px 0 #fcd8d6;
@@ -567,13 +565,11 @@ th {
   font-family: "Marck Script", cursive;
   color: var(--main-color);
   text-align: center;
-  line-height: 40px;
-  margin: 30px 0 10px 0;
+  line-height: 45px;
+  margin: 40px 0 40px 0;
 }
 .container-about-info p {
-  font-size: 14px;
   padding: 10px;
-  line-height: 25.6px;
 }
 .container-about-info span {
   color: var(--main-color);
@@ -587,12 +583,9 @@ th {
   .about-us-container {
     justify-content: space-between;
     flex-flow: row;
-    padding: 30px 20px 15px 0;
+    padding: 30px 5px 15px 0;
     margin-top: 20px;
     padding-bottom: 40px;
-  }
-  .container-about-info p {
-    font-size: 16px;
   }
   .container-about-info {
     max-width: 700px;
@@ -600,6 +593,7 @@ th {
   }
   .about-img {
     min-width: 100%;
+    min-width: 450px;
   }
 }
 
@@ -614,7 +608,7 @@ th {
   font-family: "Marck Script", cursive;
   color: var(--main-color);
   text-align: center;
-  margin: 40px 0 10px 30px;
+  margin: 40px 0 40px 0;
 }
 .trainer {
   display: flex;
@@ -646,6 +640,7 @@ th {
 }
 .container-trainer-info {
   text-align: center;
+  margin-bottom: 40px;
 }
 @media (min-width: 768px) {
   .trainer {
@@ -682,11 +677,10 @@ th {
   background-image: url("../img/testimonials-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 50vh; */
 }
 .testimonials h2 {
   color: var(--accent-color);
-  margin: 40px 0 30px 0;
+  margin: 40px 0 40px 0;
   text-align: center;
 }
 
@@ -701,8 +695,8 @@ th {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  width: 90%;
-  min-height: 250px;
+  width: 87%;
+  min-height: 270px;
   background-color: var(--accent-color);
   margin: 10px;
   padding: 15px 20px 15px 20px;
@@ -716,7 +710,7 @@ th {
 }
 .testimonials-block p:last-child {
   margin-top: 20px;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 .link-testimon {
   display: block;
@@ -729,9 +723,9 @@ th {
   color: var(--main-color);
   border-radius: 34px;
   border: 1px solid var(--main-color);
-  padding-top: 5px;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 7px;
+  padding-bottom: 2px;
 }
 .link-testimon:hover {
   color: var(--accent-color);
@@ -754,7 +748,7 @@ th {
 @media (min-width: 800px) {
   .testimonials-block {
     max-width: 27%;
-    min-height: 300px;
+    min-height: 350px;
   }
   .container-testim-block {
     flex-flow: row;
@@ -787,8 +781,7 @@ th {
 }
 .form-trial-lesson h2 {
   text-align: center;
-  margin: 10px 15px 20px 15px;
-  line-height: 35px;
+  margin: 40px 0 40px 0;
 }
 .form-trial-lesson p {
   text-align: center;
@@ -832,7 +825,7 @@ input:focus {
 /* ////// START FOOTER STYLES /////// */
 footer h2 {
   text-align: center;
-  margin: 40px 10px 10px 10px;
+  margin: 40px 0 40px 0;
   font-family: "Marck Script", cursive;
 }
 iframe {
@@ -853,6 +846,16 @@ iframe {
   text-align: left;
   padding: 20px;
 }
+.container-contacts a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+.container-contacts a:hover,
+.header-contacts a:hover {
+  color: var(--main-color);
+}
+
 .container-contacts span {
   padding: 0;
   font-family: "Marck Script", cursive;
