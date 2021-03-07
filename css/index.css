@@ -812,6 +812,7 @@ th {
   margin-top: 25px;
   color: var(--main-color);
   border: 1px solid var(--main-color);
+  font-size: 16px;
 }
 
 #btn-form:hover {
@@ -973,8 +974,8 @@ iframe {
 }
 .btn-modal-cont-form {
   margin: 20px;
-  width: 200px;
-  height: 40px;
+  width: 120px;
+  height: 50px;
   border-radius: 34px;
   cursor: pointer;
   border: none;
