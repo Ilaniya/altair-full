@@ -121,6 +121,18 @@ header {
 .burger::after {
   bottom: 0;
 }
+.burger:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.burger::after:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.burger::before:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
 .burger span {
   position: absolute;
   background-color: var(--main-color);
