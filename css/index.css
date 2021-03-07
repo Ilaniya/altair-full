@@ -221,6 +221,7 @@ header {
 }
 .btn-banner-trial-lesson:focus {
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn-banner-trial-lesson:hover,
@@ -335,6 +336,7 @@ header {
 }
 .btn-directions:focus {
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .container-directions-items h3 {
   margin-top: 10px;
@@ -743,6 +745,7 @@ th {
 }
 .link-testimon:focus {
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media (min-width: 650px) {
@@ -824,6 +827,7 @@ th {
 .btn-banner-trial-lesson:focus,
 input:focus {
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 @media (min-width: 768px) {
   .container-form {
@@ -919,6 +923,7 @@ iframe {
 }
 .arrow-bottom:active {
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .active-arrow-up {
   visibility: visible;
@@ -993,6 +998,7 @@ iframe {
 }
 .btn-modal-cont-form:focus {
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 @media (min-width: 500px) {
   .modal-cont-form-content {
