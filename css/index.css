@@ -68,7 +68,7 @@ header {
   top: -100%;
   left: 0;
   width: 100%;
-  height: 500px;
+  height: 480px;
   background-color: var(--accent-color);
   transition: all 0.3s ease 0s;
   z-index: 3;
@@ -77,17 +77,18 @@ header {
 .main-menu.active {
   top: 0;
 }
+
 .menu-items {
   list-style-type: none;
   text-align: center;
-  margin: 90px 0 0 0;
+  margin: 30px 0 20px 0;
 }
 .menu-items a {
   text-decoration: none;
   color: inherit;
 }
 .menu-items li {
-  margin: 20px 0 20px 0;
+  margin: 10px 0 10px 0;
 }
 .menu-items a:hover {
   color: var(--main-color);
@@ -95,7 +96,6 @@ header {
   cursor: pointer;
   transition: all 0.2s ease 0s;
 }
-
 .burger {
   display: block;
   position: absolute;
@@ -148,16 +148,22 @@ header {
 .phone-burger {
   display: block;
   width: 170px;
-  position: absolute;
-  top: 0;
-  left: 100%;
   text-decoration: none;
   color: inherit;
   font-size: 18px;
   margin-left: 50px;
   z-index: 10;
+  margin: 40px auto 0;
+  font-size: 18px;
 }
-
+.logo-burger {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+.hide {
+  display: none;
+}
 /* ////////  STYLES FOR BANNER AREA  //////// */
 
 .banner-img {
@@ -207,11 +213,11 @@ header {
   border: 1px solid var(--main-color);
   background-color: var(--accent-color);
   cursor: pointer;
-  color: var(--main-color);
   margin-top: 60px;
   padding-top: 7px;
   padding-bottom: 2px;
   text-align: center;
+  font-size: 18px;
 }
 .btn-banner-trial-lesson:focus {
   outline: none;
@@ -248,7 +254,7 @@ header {
     display: block;
     top: 50px;
     width: 100%;
-    height: 50px;
+    height: 45px;
     background-color: transparent;
   }
   header nav .menu-items {
@@ -256,7 +262,7 @@ header {
     justify-content: space-between;
     list-style-type: none;
     padding: 0;
-    margin: 20px 75px 10px 75px;
+    margin: 50px 75px 10px 75px;
     font-size: 18px;
   }
   /* ///// BANNER AREA STYLES ///// */
@@ -288,7 +294,7 @@ header {
 }
 .container-directions-img {
   min-height: 150px;
-  margin: 20px 0 20px 0;
+  margin: 20px 0 0 0;
 }
 .img-directions {
   box-shadow: 10px -10px 1px 0 #fcd8d6;
@@ -320,6 +326,7 @@ header {
   cursor: pointer;
   border: none;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .btn-directions:hover {
   color: var(--main-color);
@@ -330,7 +337,7 @@ header {
   outline: none;
 }
 .container-directions-items h3 {
-  margin-top: 10px;
+  margin-top: 5px;
   color: #5a5252;
 }
 
@@ -365,7 +372,7 @@ header {
   background-image: url("../img/belly-dance_adventag.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 80vh;
   background-attachment: fixed;
 }
 .container-advantages {
@@ -378,31 +385,34 @@ header {
 .advantages-item {
   width: 90%;
   background-color: var(--accent-color);
-  margin: 10px;
-  padding: 15px;
-  margin-bottom: 40px;
+  margin: 15px;
+  padding: 20px;
+  margin-bottom: 50px;
 }
-
 .advantages-item h2 {
   font-family: "Marck Script", cursive;
   color: var(--main-color);
   text-align: center;
+  margin: 40px 0 40px 0;
 }
 .advantages-item ul {
   list-style: none;
-  margin: 5px;
+  margin: 7px;
 }
 .advantages-item ul li {
-  margin: 15px;
+  margin: 7px;
 }
+
 .advantages-item ul li::before {
   content: "\2600";
+  border-color: var(--main-color);
   color: var(--main-color);
   font-weight: bold;
   display: inline-block;
   width: 2em;
   margin-left: 1em;
 }
+
 @media (min-width: 768px) {
   .container-advantages {
     justify-content: flex-end;
@@ -414,9 +424,8 @@ header {
     width: 50%;
     min-height: 120px;
   }
-  .advantages-item h2 {
-    /* font-size: 40px; */
-    margin-top: 15px;
+  .advantages-item ul li {
+    margin: 15px;
   }
 }
 
