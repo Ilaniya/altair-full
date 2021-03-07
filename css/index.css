@@ -916,11 +916,12 @@ iframe {
 .arrow-bottom:hover {
   box-shadow: 0 0 5px 3px var(--main-color);
 }
-
+.arrow-bottom:active {
+  outline: none;
+}
 .active-arrow-up {
   visibility: visible;
 }
-
 @media (min-width: 768px) {
   .container-map-contacts {
     flex-flow: row;
@@ -934,7 +935,6 @@ iframe {
     bottom: 5%;
   }
 }
-
 /* /////////////////   MODAL CONTACT FORM  STYLE /////////////////// */
 .modal-cont-form {
   display: none;
@@ -960,7 +960,6 @@ iframe {
   width: 80%;
   height: 200px;
 }
-
 .modal-cont-form p:first-child {
   text-align: center;
   font-family: "Marck Script", cursive;
@@ -972,7 +971,6 @@ iframe {
   text-align: center;
   margin: 10px;
 }
-
 .btn-modal-cont-form {
   margin: 20px;
   width: 200px;
@@ -995,13 +993,11 @@ iframe {
 .btn-modal-cont-form:focus {
   outline: none;
 }
-
 @media (min-width: 500px) {
   .modal-cont-form-content {
     width: 60%;
   }
 }
-
 @media (min-width: 700px) {
   .modal-cont-form-content {
     width: 40%;
