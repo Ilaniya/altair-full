@@ -87,6 +87,14 @@ header {
   text-decoration: none;
   color: inherit;
 }
+.menu-items a:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.menu-items a:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
 .menu-items li {
   margin: 10px 0 10px 0;
 }
@@ -125,11 +133,15 @@ header {
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
-.burger::after:focus {
+.burger:active {
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
-.burger::before:focus {
+.burger::after:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.burger::before:active {
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -167,6 +179,10 @@ header {
   z-index: 10;
   margin: 40px auto 0;
   font-size: 18px;
+}
+.phone-burger :focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .logo-burger {
   display: block;
@@ -484,6 +500,14 @@ header {
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+.right:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.left:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .left {
   transform: rotate(135deg);
@@ -867,7 +891,6 @@ iframe {
   flex-flow: column;
   justify-content: center;
 }
-
 .container-contacts {
   text-align: left;
   padding: 20px;
@@ -877,11 +900,14 @@ iframe {
   cursor: pointer;
   color: inherit;
 }
+.container-contacts a:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
 .container-contacts a:hover,
 .header-contacts a:hover {
   color: var(--main-color);
 }
-
 .container-contacts span {
   padding: 0;
   font-family: "Marck Script", cursive;
@@ -911,6 +937,14 @@ iframe {
   color: #efaeab;
   margin: 5px;
 }
+.social-icons a:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.social-icons a:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
 .container-footer-social-networks ul {
   display: flex;
   flex-flow: row;
@@ -934,6 +968,10 @@ iframe {
   box-shadow: 0 0 5px 3px var(--main-color);
 }
 .arrow-bottom:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.arrow-bottom:focus {
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
